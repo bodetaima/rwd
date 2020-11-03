@@ -5,6 +5,7 @@ import {
   FeatureOne,
   Contact,
 } from '../components/ui/home';
+import { Footer } from '../components/ui/footer';
 import '../styles/header.styl';
 import '../styles/home.styl';
 
@@ -29,7 +30,7 @@ export default function Home() {
           <Contact />
         </section>
         <section id="footer">
-          <div id="footer-container">Hihii</div>
+          <Footer />
         </section>
       </main>
     </>
