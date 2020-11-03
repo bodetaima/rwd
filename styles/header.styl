@@ -1,0 +1,98 @@
+.nav-bar
+  padding: 0.5rem 1rem 0.5rem 1rem
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @media screen and (min-width 1024px)
+    padding: 0.5rem 1rem 0.5rem 1rem
+  @media screen and (min-width 1280px)
+    max-width: 1250px
+    padding: 0
+
+.nav-bar #menu__lg
+  display: none
+  @media screen and (min-width: 1024px)
+    display: flex
+    justify-content: space-evenly
+    list-style-type: none
+    padding-right: 1.25rem
+
+.nav-bar #menu__lg li
+  margin-left: 0.75rem
+  margin-right: 0.25rem
+
+.nav-bar #menu__sm
+  display: block
+  @media screen and (min-width: 1024px)
+    display: none
+
+.nav-bar #logo
+  display: block
+  @media screen and (min-width: 1024px)
+    display: table
+    border-collapse:separate
+
+#logo-icon
+  display: table-cell
+  vertical-align: middle
+
+#product-tagline
+  display: none
+  @media screen and (min-width: 1024px)
+    display: table-cell
+    vertical-align: middle
+
+#intro-section
+  position: relative
+  min-height: 60vh
+  margin: 0 auto
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem
+  @media screen and (min-width 1024px)
+    padding: 0.5rem 1rem 0.5rem 1rem
+    min-height: 20vh
+  @media screen and (min-width 1280px)
+    max-width: 1250px
+    padding: 0
+    min-height: 50vh
+
+#introduction
+  display: block
+  text-align: center
+  @media screen and (min-width 1024px)
+    display: flex
+    text-align: left
+    align-items: center
+    padding: 0.5rem
+    justify-content: space-between
+
+#introduction #summary
+  width: 100%
+  @media screen and (min-width 1024px)
+    width: 60%
+
+
+#introduction #image__sm
+  text-align: center
+  display: block
+  @media screen and (min-width 1024px)
+    display: none
+
+#introduction #image__lg
+  display: none
+  @media screen and (min-width 1024px)
+    display: block
+    width: 40%
+    text-align: center
+
+#introduction #summary #title
+  font-size: 28px
+  font-weight: 600
+  @media screen and (min-width 1024px)
+    font-size: 42px
+
+#introduction #summary #started-button
+  margin-right: 0.25rem
+
+#introduction #summary #documentation-button
+  margin-right: 0.75rem
