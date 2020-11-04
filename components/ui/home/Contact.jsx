@@ -3,17 +3,14 @@ import React from 'react';
 export const Contact = () => (
   <>
     <div id="divider">
-      <div className="custom-shape-divider-top-1604379345">
+      <div className="custom-shape-divider-top-1604464607">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
         >
-          <path
-            d="M1200 0L0 0 598.97 114.72 1200 0z"
-            className="shape-fill"
-          ></path>
+          <path d="M1200 0L0 0 598.97 114.72 1200 0z" className="shape-fill"></path>
         </svg>
       </div>
     </div>
@@ -36,7 +33,9 @@ export const Contact = () => (
         </div>
         <div id="form">
           <input type="text" placeholder="Email" />
-          <button id="submit-button" className="btn primary">Submit</button>
+          <button id="submit-button" className="btn primary">
+            Submit
+          </button>
         </div>
       </div>
     </div>

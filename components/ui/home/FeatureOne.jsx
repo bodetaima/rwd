@@ -19,7 +19,7 @@ export const FeatureOne = () => (
         </div>
       </div>
     </div>
-    <div id="feature-container">
+    <div id="feature-one-container">
       <div id="summary">
         <h1 id="title">
           Each individual sheet in a story is called a{' '}
@@ -28,10 +28,10 @@ export const FeatureOne = () => (
         <div id="images__sm">
           <div id="mockup-1">
             <p id="title-right">#GForceStats</p>
-            <img src="/mockup-1.png" alt="mockup-1" width="70%" />
+            <img className="mockup-image" src="/mockup-1.png" alt="mockup-1" width="70%" />
           </div>
           <div id="mockup-2">
-            <img src="/mockup-2.png" alt="mockup-2" width="70%" />
+            <img className="mockup-image" src="/mockup-2.png" alt="mockup-2" width="70%" />
             <p id="title-left">#HForceStats</p>
           </div>
         </div>
@@ -48,10 +48,10 @@ export const FeatureOne = () => (
       <div id="images__lg">
         <div id="mockup-1">
           <p id="title-right">#GForceStats</p>
-          <img src="/mockup-1.png" alt="mockup-1" width="70%" />
+          <img className="mockup-image" src="/mockup-1.png" alt="mockup-1" />
         </div>
         <div id="mockup-2">
-          <img src="/mockup-2.png" alt="mockup-2" width="70%" />
+          <img className="mockup-image" src="/mockup-2.png" alt="mockup-2" />
           <p id="title-left">#HForceStats</p>
         </div>
       </div>
