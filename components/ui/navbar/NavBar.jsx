@@ -4,8 +4,8 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChangeHistoryIcon from '@material-ui/icons/ChangeHistory';
 
-export const NavBar = () => (
-  <nav className="nav-bar">
+export const NavBar = ({ sticky, element }) => (
+  <nav ref={element} className={sticky ? "nav-bar navbar-sticky" : "nav-bar"}>
     <div className="nav-bar-item">
       <div id="logo">
         <span id="logo-icon">

@@ -1,17 +1,13 @@
 import Head from 'next/head';
 import { NavBar } from '../components/ui/navbar';
-import {
-  ProductIntroduction,
-  FeatureOne,
-  Contact,
-  FeatureX,
-  FeatureY,
-} from '../components/ui/home';
-import { Footer } from '../components/ui/footer';
+import { HomeView } from '../components/views';
+import useSticky from '../components/ui/navbar/useSticky';
 import '../styles/header.styl';
 import '../styles/home.styl';
 
 export default function Home() {
+  const { isSticky, element } = useSticky();
+
   return (
     <>
       <Head>
@@ -19,27 +15,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <NavBar />
+        <NavBar sticky={isSticky} element={element} />
       </header>
-      <main>
-        <section id="intro-section">
-          <ProductIntroduction />
-        </section>
-        <section id="feature-1">
-          <FeatureOne />
-        </section>
-        <section id="feature-x">
-          <FeatureX />
-        </section>
-        <section id="feature-y">
-          <FeatureY />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
-        <section id="footer">
-          <Footer />
-        </section>
+      <main style={{ marginTop: '3.5rem' }}>
+        <HomeView />
       </main>
     </>
   );

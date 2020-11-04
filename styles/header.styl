@@ -4,11 +4,39 @@
   display: flex
   align-items: center
   justify-content: space-between
+  z-index: 1
+  width: 100%
   @media screen and (min-width 1024px)
     padding: 0.5rem 1rem 0.5rem 1rem
   @media screen and (min-width 1280px)
-    max-width: 1250px
+    max-width 1250px
     padding: 0
+
+.navbar-sticky
+  background-color: white
+  position: fixed
+  top: 0
+  left: 0
+  max-width: 100%
+  box-shadow:
+  0 0.3px 2.2px rgba(0, 0, 0, 0.011),
+  0 0.7px 5.3px rgba(0, 0, 0, 0.016),
+  0 1.3px 10px rgba(0, 0, 0, 0.02),
+  0 2.2px 17.9px rgba(0, 0, 0, 0.024),
+  0 4.2px 33.4px rgba(0, 0, 0, 0.029),
+  0 10px 80px rgba(0, 0, 0, 0.04)
+  animation: moveDown 0.5s ease-in-out
+  @media screen and (min-width 1024px)
+    padding-left: 17rem
+    padding-right: 17rem
+
+@keyframes moveDown
+  from
+    transform: translateY(-100%)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
 
 .nav-bar #menu__lg
   display: none
@@ -38,10 +66,8 @@
   vertical-align: middle
 
 #product-tagline
-  display: none
-  @media screen and (min-width: 1024px)
-    display: table-cell
-    vertical-align: middle
+  display: table-cell
+  vertical-align: middle
 
 #intro-section
   position: relative
